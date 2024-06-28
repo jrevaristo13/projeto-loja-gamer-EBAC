@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
 ul {
     padding: 0px!important; 
  }
@@ -25,12 +26,21 @@ ul {
      margin-top: 18px;
      cursor: pointer;
      }
+    
      .header-2 {
          background-color: hsl(0, 33%, 96%);
          width:100%;
+         height: 70px;
          margin: 0 auto;
-         padding: 16px;
+         padding: 0;
          flex-flow: nowrap;
+         display: flex;
+         margin-top: 10px;
+         font-family: "Revalia", sans-serif; 
+         }
+         .header-2 .texto-logo a{
+            transform: translateX(150px);
+           
          }
          .menu-urls {
              height: 80px;
@@ -42,6 +52,8 @@ ul {
                  color: #8b8b8b;
                  margin-left: 15px;
                  height: 40px;
+                 justify-content: space-around;
+                
                  
 
              }
@@ -54,20 +66,30 @@ ul {
                  
              }
              .menu ul li a {
-                 color: #8b8b8b;
+                 color: #1a0bf5;
                  text-decoration: none;
                  font-size: 18px;
                  text-transform: uppercase;
              }
              .menu {
-                 width: 70%;
+                 width: 100%;
                  float: left;
+
                  }
-                 .texto-logo{
-                    color: hwb(240 97% 1%);
-                    font-family: 'Rubik', sans-serif;
-                     transform: translateX(150px);
-                 }
+                 .texto-logo a{
+                    background-image: linear-gradient(to bottom, red, yellow);
+                   color: black;
+                   background-clip: text;
+                   -webkit-background-clip: text;
+                   font-family: "Revalia", sans-serif; 
+                   -webkit-text-fill-color: transparent;
+                    text-decoration: none;
+                    
+                    
+                    border: 11px solid blue;
+                }
+                    
+                    
                  .texto-logo1{
                      
                      float: left;
@@ -142,18 +164,15 @@ ul {
                     font-size: 30px;
                     color: hsl(0, 40%, 98%);
                 }
-                .texto-destaque p {
-                    font-size: 15px;
-                    color: #f5f0f0;
-                }
+                
                 
                 .col-3 {
-                    display: inline;
+                   
                     text-align: center;
                     padding-left: 15px;
                     padding-right: 15px; 
                     width: 29%;
-                    float: left;
+                
                     position: relative;
                     
                 
@@ -171,109 +190,108 @@ ul {
                     padding-bottom: 15px;
                     margin-left: 10px;
                 }
-                .bloco-imagem b, p {
-                    text-align: left;
-                    
-                }
+             
+                
                 .bloco-texto {
                     margin-top: 350px;
                     background-color: #00bac6;
                     
                 }
-                
-                h3 {
-                    font-weight: normal!important;
+              #lupa{
+               transform: translateX(-45px);
+               margin-top: 19px;
+              }
+                .busca input{
+                    transform: translateX(-35px);
+                        width:300px;
+                        height: 30px;
+                        border: 1px solid black;
+                        margin-top: 15px;
+                      
                 }
-                
-                .bloco-imagens-texto {
-                    background-color: #1556c0;
+            
+                .busca1 input{
+                    
+                        width:300px;
+                        height: 30px;
+                        border: 1px solid black;
+                        margin-top: 15px;
+                      
                 }
-                .bloco-imagens-texto:before {
+                .glow-on-hover{
+                    width: 150px;
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                    color: rgb(20, 140, 232);
+                    background: #02030a;
+                    cursor: pointer;
+                    position: absolute;
+                    z-index: 0;
+                    border-radius: 10px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 13PX;
+                    border: 2px solid white ;
+                    transform: translateX(1110px);
+                    margin-top: 280px;
+                    font-family: "Revalia", sans-serif;
+                    position: fixed;
+                    
+                  }
+                 button .glow-on-hover a{
+                    text-decoration: none;
+                  }
+                
+                  
+                  .glow-on-hover:before {
+                    content: '';
+                    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+                    position: absolute;
+                    top: -2px;
+                    left:-2px;
+                    background-size: 400%;
+                    z-index: -1;
+                    filter: blur(5px);
+                    width: calc(100% + 4px);
+                    height: calc(100% + 4px);
+                    animation: glowing 20s linear infinite;
+                    opacity: 0;
+                    transition: opacity .3s ease-in-out;
+                    border-radius: 10px;
+                  }
+                  
+                  .glow-on-hover:active {
+                    color: #000
+                  }
+                  
+                  .glow-on-hover:active:after {
+                    background: transparent;
+                  }
+                  
+                  .glow-on-hover:hover:before {
+                    opacity: 1;
+                  }
+                  
+                  .glow-on-hover:after {
+                    z-index: -1;
+                    content: '';
+                    position: absolute;
                     width: 100%;
-                    display: inline-block;
-                    content: '';
-                    height: 52px;
-                    background: hsl(0, 100%, 1%);
-                    background-image: url('../img/setinha.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-                .bloco-imagens-texto:after {
-                    width: 100%;
-                    display: inline-block;
-                    content: '';
-                    height: 70px;
-                    background: #080000;
-                } 
-                .col-4 {
-                    float: left;
-                    width: 25%;
-                    text-align: center;
-                }
-                .col-4 img {
-                cursor: pointer;
-                 margin: 0 auto;
-                 padding-top: 1em;
-                 vertical-align: middle;
-                }
-                .col-4 img:hover {
-                    margin-top: 10px!important;
-                    position: relative!important;
-                }
+                    height: 100%;
+                    background: #111;
+                    left: 0;
+                    top: 0;
+                    border-radius: 10px;
+                  }
+                  
+                  @keyframes glowing {
+                    0% { background-position: 0 0; }
+                    50% { background-position: 400% 0; }
+                    100% { background-position: 0 0; }
+                  }
+                  .logoMarcas{
+                    padding: auto;
+                    transform: translateY(-15px);
+                    
+                  }
                 
-                .bloco-logos {
-                    height: 170px;
-                    margin-top: 50%;
-                }
-                
-                .bloco-logos img {
-                    margin-top: 50px;
-                }
-                
-                .footer h3 {
-                    text-align: left;
-                }
-                
-                .footer {
-                    background-image: url('../img/footer.png');
-                    color: hsl(0, 78%, 48%);
-                }
-                
-                .footer-2 {
-                    background-image: url('../img/footer2.png');
-                    color: #dc1919;
-                    height: 90px;
-                }
-                
-                
-                .footer p {
-                    width: 90%;
-                    text-align: left;
-                }
-                
-                .footer-2 p {
-                    padding: 10px;
-                }
-                
-                .clock {
-                    color: #f8f4f4!important;
-                }
-                
-                .clock:before {
-                    content: '';
-                    width:  15px;
-                    height: 15px;
-                    display: inline-block;
-                    background-image: url('../img/clock.png');
-                    float: left;
-                    background-repeat: no-repeat;
-                    padding-left: 5px;
-                }
-                #bloco1{
-                    transform: translateY(60px);
-                }
-                #coluna2{
-                    transform: translateY(55px);
-                    color: #f4f0f0;
-                }
-              

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+body {
+    min-height: 100%;
+   
+    height: 100%;
+    width: 100%;
+    display: inline;
+    background-color: hsl(203, 54%, 83%);
+}
+
+ul {
+    padding: 0px!important; 
+}
+
+ .logo {
+
+  padding: 16px;
+  width: 97%;
+  background-color: blue;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 7px #231e21;
+  
+ }
+             .texto-logo a{
+                    background-image: linear-gradient(to bottom, red, yellow);
+                   color: black;
+                   background-clip: text;
+                   -webkit-background-clip: text;
+                   font-family: "Revalia", sans-serif; 
+                   -webkit-text-fill-color: transparent;
+                    text-decoration: none;
+                    font-size: 40px;
+                    border: 11px solid rgb(250, 250, 255);
+                }
+               
+                
+                .texto-logo3 a{
+                    font-family: "Revalia", sans-serif; 
+                     text-decoration: none;
+                     color: aliceblue;
+                     font-size: 25px;
+                
+                 }
+                 .texto-logo3{
+                     transform: translateX(950px);
+                     margin-top: -80px;
+                     padding: 0 ;
+                     position: absolute;
+                 }
+                
+                 .img-container{
+                    width: 500px;
+                    height: 300px;
+                    overflow: hidden;
+                    border: 2px solid #888585;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    margin-top: 25px;
+                    box-shadow: 0 0 10px 7px #231e21;
+                   transform: translateX(100px);
+                 }
+                 
+                 .img-container img{
+                    width: 100%;
+                    height: 100%;
+                    -webkit-transition: -webkit-transform .5s ease;
+                    transition: transform .5s ease;
+                 }
+                 
+                 .img-container:hover img{
+                    -webkit-transform: scale(2.1);
+                    transform: scale(1.5
+                    );
+                 }
+                 section{
+                 
+                    width: 500px;
+                    height: 300px;
+                    margin-top: -298px;
+                    text-align: center;
+                   
+                   transform: translateX(700px);
+                 }
+                 article{
+                    margin-top: 2px;
+                 }
+                 h3{
+                    color: brown;
+                    box-shadow: 0 0 10px 7px #231e21;
+                    font-family: "Revalia", sans-serif;
+                    text-shadow: 2px -2px 10px rgb(118, 121, 118); 
+                 }
+                 .section-input{
+                    width: 100vh;
+                    height: 300px;
+                    margin-top: 12px;
+                  text-align: left;
+                  
+                    position: absolute;
+                   
+                   transform: translateX(150px);
+                 }
+                 
+                 .section-input article{
+                    color: blue;
+                    font-family: "Revalia", sans-serif;
+                    font-size: 25px;
+                    font-weight: 1000;
+                    text-shadow: rgb(23, 17, 17) 1px 2px 5px;
+                    transform: translateX(8px);
+                 }
+                 .section-input p{
+                    color: #2019e6;
+                    font-size: 15px;
+                    transform: translateX(15px);
+                 }
+                 .section-input input{
+                    width:300px ;
+                    
+                 }
+                 #busca1 {
+                    height: 100px;
+                    border-radius: 0;
+                    text-align: left;
+                    
+                 }
+                .glow-on-hover{
+                    width: 300px;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    color: rgb(20, 140, 232);
+                    background: #02030a;
+                    cursor: pointer;
+                    
+                  
+                    z-index: 0;
+                    border-radius: 10px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 13px;
+                
+                    transform: translateX(5px);
+                    margin-top: -50px;
+                    font-family: "Revalia", sans-serif;
+
+                   
+                }
+                button .glow-on-hover a{
+                    text-decoration: none;
+                  }
+                
+                  
+                  .glow-on-hover:before {
+                    content: '';
+                    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+                    position: absolute;
+                    top: -2px;
+                    left:-2px;
+                    background-size: 400%;
+                    z-index: -1;
+                    filter: blur(5px);
+                    width: calc(100% + 4px);
+                    height: calc(100% + 4px);
+                    animation: glowing 20s linear infinite;
+                    opacity: 0;
+                    transition: opacity .3s ease-in-out;
+                    border-radius: 10px;
+                  }
+                  
+                  .glow-on-hover:active {
+                    color: #000
+                  }
+                  
+                  .glow-on-hover:active:after {
+                    background: transparent;
+                  }
+                  
+                  .glow-on-hover:hover:before {
+                    opacity: 1;
+                  }
+                  
+                  .glow-on-hover:after {
+                    z-index: -1;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: #111;
+                    left: 0;
+                    top: 0;
+                    border-radius: 10px;
+                  }
+                  
+                  @keyframes glowing {
+                    0% { background-position: 0 0; }
+                    50% { background-position: 400% 0; }
+                    100% { background-position: 0 0; }
+                  }
+                 a{
+                    text-decoration: none;
+                  }
+                  .midia{ 
+                    transform: translateX(650px);
+                    margin-top: 40px;
+                    padding: 0 ;
+                    position: absolute;
+                  }
+                  i{
+                    justify-content: space-evenly;
+                    padding: 20px;
+                  }
+                  footer{
+                    transform: translateX(950px);
+                    margin-top: 40px;
+                
+                    position: absolute;
+                  }
+                label{font-size: 10px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    
+                }
