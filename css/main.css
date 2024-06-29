@@ -1,0 +1,121 @@
+header{
+    padding: 16px;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+/*trabalhando a div container header*/
+.container{
+    max: width 1280px;
+    width: 100%;
+    margin:0 auto; 
+    
+}
+header.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Aqui termina o css da div container*/
+
+/*trabalhando com a div container da section*/
+header.container,
+section.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.brands_list img{
+    height: 24px;
+
+}
+.brands_list li{
+    display: inline;
+    margin-right: 8px;
+}
+section.container{
+    align-items: flex-start;
+}
+section{
+    padding: 24px 0;
+
+}
+section h2{
+    margin-bottom: 16px;
+}
+section{
+    color: #182c61;
+}
+section p{
+    margin-bottom: 8px;
+
+}
+.store_front{
+margin-right: 32px;
+}
+/* aqui termina o trabalho com a div container da section*/
+
+/* aqui inicia o trabalho com a div container da #contact*/
+#contact .container{
+    display: block;
+  
+}
+#contact_methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* aqui termina o trabalho com a div container da section*/
+
+/* aqui inicia o trabalho com a div form*/
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+form textarea{
+    resize: none;
+    height: 180px;
+}
+form button{
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+
+}
+
+form button:hover{
+    background-color: #182c61;
+}
+input:focus, textarea:focus{
+    outline-color: #182c61;
+}
+/* aqui inicia o trabalho com a div ul class="social_links*/
+.social_links img {
+    height: 24px;
+
+}
+.social_links li{
+    display: inline;
+    margin-right: 8px;
+}
+.social_links li a {
+    text-decoration: none;
+}
+
+
+
